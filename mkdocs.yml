@@ -1,0 +1,24 @@
+site_name: Web Site
+nav:
+    - Docs: index.md
+
+plugins:
+    - search
+    - mermaid2
+    - mkdocstrings:
+        custom_templates: templates
+        default_handler: python
+        handlers:
+        python:
+            options:
+            show_source: false
+
+markdown_extensions:
+  - admonition
+
+theme:
+    name: mkdocs
+    locale: de
+    nav_style: light # light, dark, primary, secondary
+    hljs_style: androidstudio
+  
