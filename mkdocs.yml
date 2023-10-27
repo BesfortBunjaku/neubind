@@ -17,8 +17,11 @@ markdown_extensions:
   - admonition
 
 theme:
-    name: mkdocs
-    locale: de
-    nav_style: light # light, dark, primary, secondary
-    hljs_style: androidstudio
+    name: material
+    palette:
+        primary: white
+        accent: light blue
+    # locale: de
+    # nav_style: light # light, dark, primary, secondary
+    # hljs_style: androidstudio
   

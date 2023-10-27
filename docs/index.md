@@ -9,6 +9,17 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 
+```mermaid  
+    graph TD
+    A[Working Directory] -->|Add Changes| B(Git Staging Area)
+    B -->|Commit| C[Git Repository]
+    C -->|History| D((Commits))
+    style A fill:#FFD700,stroke:#000,stroke-width:2px
+    style B fill:#87CEEB,stroke:#000,stroke-width:2px
+    style C fill:#90EE90,stroke:#000,stroke-width:2px
+    style D fill:#FFF,stroke:#000,stroke-width:2px
+```
+
 ## Project layout
 
     mkdocs.yml    # The configuration file.
