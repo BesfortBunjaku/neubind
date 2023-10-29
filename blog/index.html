@@ -12,7 +12,7 @@
         <meta name="author" content="Martin Donath">
       
       
-        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/cheetsheet/">
+        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/blog/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>Cheetsheet - Material for MkDocs</title>
+        <title>Blog - Material for MkDocs</title>
       
     
     
@@ -76,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#blog" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -111,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cheetsheet
+              Blog
             
           </span>
         </div>
@@ -320,6 +325,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -328,99 +335,16 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-    <a href="https://github.com/squidfunk/mkdocs-material/edit/master/docs/cheetsheet.md" title="Edit this page" class="md-content__button md-icon">
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="blog">Blog<a class="headerlink" href="#blog" title="Permanent link">&para;</a></h1>
+      </header>
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
-    </a>
-  
-  
-    
       
-    
-    <a href="https://github.com/squidfunk/mkdocs-material/raw/master/docs/cheetsheet.md" title="View source of this page" class="md-content__button md-icon">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
-    </a>
-  
+    </div>
+  </div>
 
-
-  <h1>Cheetsheet</h1>
-
-<blockquote>
-<p>1 / 1</p>
-<p>mkdocs material costume css</p>
-</blockquote>
-<p>1 / 1</p>
-<p>If you want to customize the appearance of your MkDocs Material theme documentation site by applying custom CSS, you can follow these steps:</p>
-<ol>
-<li>
-<p><strong>Create a <code>custom.css</code> File:</strong></p>
-<p>First, create a custom CSS file (e.g., <code>custom.css</code>) where you will define your custom styles. You can create this file in your project's root directory or in a specific folder, depending on your preference.</p>
-</li>
-<li>
-<p><strong>Edit Your <code>mkdocs.yml</code> Configuration:</strong></p>
-<p>Open your <code>mkdocs.yml</code> configuration file, and add or modify the following lines:</p>
-</li>
-</ol>
-<p>yaml</p>
-<div class="language-yaml highlight" style="background: #1d2331"><pre style="line-height: 125%;"><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span style="color: #5CCFE6">theme</span><span style="color: #d4d2c8">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span style="color: #d4d2c8">  </span><span style="color: #5CCFE6">name</span><span style="color: #d4d2c8">: </span><span style="color: #D5FF80">&quot;material&quot;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span style="color: #d4d2c8">  </span><span style="color: #5CCFE6">custom_dir</span><span style="color: #d4d2c8">: </span><span style="color: #D5FF80">&quot;path_to_custom_css_folder&quot;</span><span style="color: #d4d2c8"> </span><span style="color: #7e8aa1"># Optional</span>
-</span></code></pre></div>
-<div class="language-text highlight" style="background: #1d2331"><pre style="line-height: 125%;"><span></span><code>Replace `&#39;path_to_custom_css_folder&#39;` with the relative path to the folder where your `custom.css` file is located. If you placed the `custom.css` file in your project&#39;s root directory, you can omit the `custom_dir` setting.
-</code></pre></div>
-<ol>
-<li>
-<p><strong>Reference the Custom CSS in Your HTML Template:</strong></p>
-<p>To include your custom CSS file in the generated documentation, you need to modify the HTML template. You can either create a custom template or directly modify the existing template used by the Material theme.</p>
-<p>To create a custom template, you can use the <code>md_template_dir</code> option in your <code>mkdocs.yml</code>:</p>
-<p>yaml</p>
-<div class="language-yaml highlight" style="background: #1d2331"><pre style="line-height: 125%;"><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span style="color: #5CCFE6">markdown_extensions</span><span style="color: #d4d2c8">:</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span style="color: #d4d2c8">  - </span><span style="color: #D5FF80">markdown_include.include</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span style="color: #5CCFE6">md_template_dir</span><span style="color: #d4d2c8">: </span><span style="color: #D5FF80">&quot;path_to_custom_template_folder&quot;</span>
-</span></code></pre></div>
-<p>Then, in your custom template folder, create an <code>extra_head.html</code> file, which will be included in the <code>&lt;head&gt;</code> section of each page. Inside this file, link to your custom CSS file:</p>
-<p>html</p>
-<div class="language-html highlight" style="background: #1d2331"><pre style="line-height: 125%;"><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span style="color: #d4d2c8">&lt;</span><span style="color: #5CCFE6">link</span> <span style="color: #FFD173">rel</span><span style="color: #FFAD66">=</span><span style="color: #D5FF80">&quot;stylesheet&quot;</span> <span style="color: #FFD173">href</span><span style="color: #FFAD66">=</span><span style="color: #D5FF80">&quot;{{ config.theme.custom_dir }}/custom.css&quot;</span> <span style="color: #d4d2c8">/&gt;</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>Apply Custom Styles:</strong></p>
-</li>
-</ol>
-<p>In your <code>custom.css</code> file, you can add custom CSS styles to modify the appearance of your documentation. You can use CSS rules to target specific elements or classes and define your desired styles.</p>
-<p>For example, to change the background color of code blocks, you can use CSS like this:</p>
-<p>css</p>
-<div class="language-css highlight" style="background: #1d2331"><pre style="line-height: 125%;"><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span style="color: #5CCFE6">pre</span><span style="color: #d4d2c8"> {</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span style="color: #d4d2c8">  </span><span style="color: #FFAD66">background-color</span><span style="color: #d4d2c8">: </span><span style="color: #DFBFFF">#f2f2f2</span><span style="color: #d4d2c8">;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span style="color: #d4d2c8">}</span>
-</span></code></pre></div>
-<ol>
-<li>
-<p><strong>Build Your Documentation:</strong></p>
-<p>After making these changes, rebuild your documentation site by running the <code>mkdocs build</code> command.</p>
-</li>
-<li>
-<p><strong>View Your Customized Documentation:</strong></p>
-<p>Once the build process is complete, you can view your documentation with the custom CSS styles applied.</p>
-</li>
-</ol>
-<p>Keep in mind that customizing the appearance of your MkDocs Material theme documentation site using CSS allows you to tailor the design to your specific needs. You can modify fonts, colors, layout, and more to match your branding or improve the user experience.</p>
-
-
-
-
-
-                
-              </article>
-            </div>
-          
           
         </div>
         
