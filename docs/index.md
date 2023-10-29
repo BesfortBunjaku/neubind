@@ -26,3 +26,21 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+``` py
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+
+
+!!! tip
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+::: neubind.functions
+ 

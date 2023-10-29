@@ -1,27 +1,34 @@
 site_name: Web Site
 nav:
     - Docs: index.md
-
-plugins:
-    - search
-    - mermaid2
-    - mkdocstrings:
-        custom_templates: templates
-        default_handler: python
-        handlers:
-        python:
-            options:
-            show_source: false
-
-markdown_extensions:
-  - admonition
+    - Cheetsheet: cheetsheet.md
 
 theme:
     name: material
-    palette:
-        primary: white
-        accent: light blue
-    # locale: de
-    # nav_style: light # light, dark, primary, secondary
-    # hljs_style: androidstudio
-  
+    palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: black
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: orange
+# Extensions https://yakworks.github.io/docmark/
+markdown_extensions:
+#   - def_list
+  - admonition
+#   - pymdownx.details
+#   - pymdownx.highlight:
+#       anchor_linenums: true
+#   - pymdownx.inlinehilite
+  - codehilite:
+    
+        guess_lang: False
+        use_pygments: True
+        noclasses: True
+        pygments_style: lightbulb  # theme source :https://pygments.org/styles/ 

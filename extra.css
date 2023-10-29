@@ -1,0 +1,5 @@
+/* Change code block background and text color */
+pre, code {
+    background-color: #c32929;
+    color: #333;
+  }
