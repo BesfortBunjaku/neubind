@@ -9,16 +9,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 
-```mermaid  
-    graph TD
-    A[Working Directory] -->|Add Changes| B(Git Staging Area)
-    B -->|Commit| C[Git Repository]
-    C -->|History| D((Commits))
-    style A fill:#FFD700,stroke:#000,stroke-width:2px
-    style B fill:#87CEEB,stroke:#000,stroke-width:2px
-    style C fill:#90EE90,stroke:#000,stroke-width:2px
-    style D fill:#FFF,stroke:#000,stroke-width:2px
-```
+ 
 
 ## Project layout
 
@@ -42,5 +33,21 @@ def bubble_sort(items):
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-::: neubind.functions
+
+
+
+
+``` mermaid
+stateDiagram-v2
+  state fork_state <<fork>>
+    [*] --> fork_state
+    fork_state --> State2
+    fork_state --> State3
+
+    state join_state <<join>>
+    State2 --> join_state
+    State3 --> join_state
+    join_state --> State4
+    State4 --> [*]
+```
  
